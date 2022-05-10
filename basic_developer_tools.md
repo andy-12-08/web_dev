@@ -33,5 +33,8 @@ Leave your main branch and go into your "gh-pages" branch ("git checkout gh-page
 
 ![nodejs](./images/checkout.PNG)
 
-Note that only the contents of the "gh-pages" branch gets published on your site. 
+Note that only the contents of the "gh-pages" branch gets published on your site.
+
+Update changes ("git add .", "git commit -mgit  'changes'", "git push")
+
 
