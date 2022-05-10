@@ -21,7 +21,17 @@ Ensure browser sync is installed
 
 ![nodejs](./images/browser_syn.PNG)
 
+## Prepare your repository to host your website
+On your repository, go to settings > Pages and create "gh-pages" branch
+![nodejs](./images/repo.PNG)
 
+Check out this link for more information on how to do this:
+[click here](https://happycoding.io/tutorials/html/github-pages)
 
+To update your current local files with those changes you've made on your repository ( "git status", "git fetch", "git pull", "git status")
+Leave your main branch and go into your "gh-pages" branch ("git checkout gh-pages").
 
+![nodejs](./images/checkout.PNG)
+
+Note that only the contents of the "gh-pages" branch gets published on your site. 
 
