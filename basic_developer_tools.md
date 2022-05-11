@@ -37,4 +37,9 @@ Note that only the contents of the "gh-pages" branch gets published on your site
 
 Update changes ("git add .", "git commit -mgit  'changes'", "git push")
 
+## Note
+## Loading browser sync
 
+browser-sync start --server --watch --directory --files "*"
+
+![browser_syn](./images/browsersync.PNG)
