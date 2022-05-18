@@ -5,3 +5,5 @@
 - To centralize a group of text under a given division element (a very important block elment), explore adjusting the width, aligning, ad most importantly; relative position specification. <br>
 
 - Also try as much as possible to keep your work neat.
+
+- To avoid bolding your text, you can start a new line with the p element (a block element)
