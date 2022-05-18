@@ -1,4 +1,4 @@
-### In this project, I designed a simple web page using HTML and CSS. This project made me understand the importance of division element in sepecting different parts of the web page for ease of styling.
+### In this project, I designed a simple web page using HTML and CSS. This project made me understand the importance of division element in specifying different parts of the web page for ease of styling.
 ### A few take home here are:
 - While adjusting the distance between elments, first add padding (in all four directions) and preview, then go ahead to add the ride set of padding distances before adding your margin. <br>
 
