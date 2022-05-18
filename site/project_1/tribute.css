@@ -1,0 +1,28 @@
+.bio{width: 40%;
+    text-align: justify;
+    position: relative;
+    left: 450px;}
+
+.centralize{text-align: center;}
+
+img{width: 1000px;}
+
+.photo{background-color: white;
+padding: 20px 0px 5px 0px;
+margin: 10px 10px 20px 10px;
+font-size: 25px;
+font-weight: 100px;}
+
+
+
+h3{font-size: 40px;
+padding-top: 40px;}
+h5{font-size: 15px;
+    font-weight: 30px;
+padding-bottom: 30px;}
+
+.shift{margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(10,15,5,0.1);}
