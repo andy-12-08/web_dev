@@ -2,4 +2,6 @@
 ### A few take home here are:
 - While adjusting the distance between elments, first add padding (in all four directions) and preview, then go ahead to add the right set of padding distances before adding your margin. <br>
 
-- To centralize a group of text under t given division element, explore adjusting the width, aligning, ad most importantly; relative position specification. 
+- To centralize a group of text under a given division element, explore adjusting the width, aligning, ad most importantly; relative position specification. <br>
+
+- Also try as much as possible to keep your work neat. 
