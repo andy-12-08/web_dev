@@ -4,4 +4,4 @@
 
 - To centralize a group of text under a given division element, explore adjusting the width, aligning, ad most importantly; relative position specification. <br>
 
-- Also try as much as possible to keep your work neat. 
+- Also try as much as possible to keep your work neat.
