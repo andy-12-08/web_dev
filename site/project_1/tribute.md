@@ -5,6 +5,16 @@
 - To centralize a group of text under a given division element (a very important block elment), explore adjusting the width, aligning, ad most importantly; relative position specification. <br>
 
 - margin: auto; helped me to centralize very well, so that it displays well across various screen size. 
+<br>
+
+- I realised that relative positioning displays at different positions on different screen size. <br>
+
+- Adjust image width so that it dosen't go above 100% (I realised that % was helpful here in contrast to pexels) of the screen.
+<br>
+
+- In adjusting positions, try to work with relative positions and with percentage (%), so as to get good rendering, when displayed on larger screens. This is very important. 
+
+<br>
 
 - Also try as much as possible to keep your work neat.
 
