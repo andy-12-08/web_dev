@@ -12,9 +12,15 @@
 - Adjust image width so that it dosen't go above 100% (I realised that % was helpful here in contrast to pexels) of the screen.
 <br>
 
-- In adjusting positions, try to work with relative positions and with percentage (%), so as to get good rendering, when displayed on larger screens. This is very important. 
+- In adjusting positions, try to work with relative positions and with percentage (%), so as to get good rendering, when displayed on larger screens, because different screen has different sizes. This is very important. 
 
 <br>
+
+### Absolute Positioning
+- You can set out a particular layout with a container element and move that container element or offset it all around the screen without having to offset particular values of every element within that container element. Absolute positioning needs a  relative or an absolute parent (or an ancestor) When we set an absolute position for an element, it goes up the chain to check if the next parent has it's position set to either relative or absolute, if NO, it keeps going, to the body element, if No, then finnally to the html element which has it's position set to relative by default. 
+<br>
+
+-  Static positioning is default for all elements, except html. Relative positioning offsets the element relative to it's normal document flow position. Absolute positioning is relative to closest ancestor which has positioning set to non-static value. Offsetting the relative container element offsets it's contents as well. 
 
 - Also try as much as possible to keep your work neat.
 
