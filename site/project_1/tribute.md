@@ -9,7 +9,7 @@
 
 - I realised that relative positioning displays at different positions on different screen size. <br>
 
-- Adjust image width so that it dosen't go above 100% (I realised that % was helpful here in contrast to pexels) of the screen.
+- Adjust image width so that it dosen't go above 100% (I realised that % was helpful here in contrast to pexels) of the screen. Also, when you specify width in %, it is with respect to the container element it is in (the parent element)
 <br>
 
 - In adjusting positions, try to work with relative positions and with percentage (%), so as to get good rendering, when displayed on larger screens, because different screen has different sizes. This is very important. 
