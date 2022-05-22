@@ -5,5 +5,10 @@
 - I made use of CSS grid in the section below the header. I made use of 3 by 6 grid and this hlped me to position the elements containing (the degrees, the image, the biography). From this I saw that:
      <br>
     
-    - ONLY width really matters: your height does not really effect until you begin to place tour contents.
-     
+    - ONLY width really matters: your height does not really effect until you begin to place tour contents. <br>
+
+- This image represents a  3 x 6 grid:
+<br>
+
+![css_grid](./images/css_grid.PNG)
+
