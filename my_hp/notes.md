@@ -2,7 +2,7 @@
 - I used CSS flex for building the menu bar, this functionality in aligning the row and spacing them. I converted the list to inline elements then embed them in a container whoose display was set to *flex*. This gave me a good understanding of how *flex* really works. 
 <br>
 
-- I made use of CSS grid in the section below the header. I made use of 3 by 6 grid and this hlped me to position the elements containing (the degrees, the image, the biography) This was later changed to 3 by 8 grid to obtain a better positioning of the image.From this I saw that:
+- I made use of CSS grid in the section below the header. I made use of 3 by 6 grid and this hlped me to position the elements containing (the degrees, the image, the biography).This was later changed to 3 by 8 grid to obtain a better positioning of the image and the width of the image set to 100%. From this I saw that:
      <br>
     
     - ONLY width really matters: your height does not really effect until you begin to place tour contents. <br>
@@ -15,5 +15,15 @@
 ![css_grid](./images/css_grid.PNG)
 <br>
 
-- A negative margin (-1%) on the header helped to push it out to the top and edges of the window.
+- A negative margin (-1%) on the header helped to push it out to the top and edges of the window. <br>
+
+- Specify line height to control spcing between text: <br>
+**line-height: 200%**
+<br>
+
+-  Adding box-shadow property can really help beautify your website. Don't forget to at least one box-shadow id selector or class selector to a group of elements. <br>
+***box-shadow: 0 10px 20px rgba(500,0,0,0.5), 0 6px 6px rgba(0,0,0,0.23);*** <br>
+
+- ***On CSS GRID :***  To achieve that dynamic response when you shrink the elements in your cells, enusre that the heights and widths of the elements are set to 100% (i.e. aligning with the grid cells, so that as the cells move when the grid shrinks, the contents maintain same behaviour. This is very neccessary, esppecially if you have images in your cells.)
+
 
