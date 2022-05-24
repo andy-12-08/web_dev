@@ -29,5 +29,7 @@
 -  Combine ***media queries*** with your ***flexbox*** and or ***CSS grid*** to achieve your RESPONSIVE behaviour and POSITIONING. 
 <br>
 
-- Most responsive framework (e.g Bootstrap) uses the 12-column grid responsive layout. 12 is used because it has several factors (1,2,3,4,6 & 12). Which means we could subdivide our page into sections that are evenly split and nicely layout themselves.
+- Most responsive framework (e.g Bootstrap) uses the 12-column grid responsive layout. 12 is used because it has several factors (1,2,3,4,6 & 12). Which means we could subdivide our page into sections that are evenly split and nicely layout themselves. <br>
+
+-  In a particular cell of your CSS grid, you could have both your image a text below it. 
 
