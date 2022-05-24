@@ -24,6 +24,10 @@
 -  Adding box-shadow property can really help beautify your website. Don't forget to at least one box-shadow id selector or class selector to a group of elements. <br>
 ***box-shadow: 0 10px 20px rgba(500,0,0,0.5), 0 6px 6px rgba(0,0,0,0.23);*** <br>
 
-- ***On CSS GRID :***  To achieve that dynamic response when you shrink the elements in your cells, enusre that the heights and widths of the elements are set to 100% (i.e. aligning with the grid cells, so that as the cells move when the grid shrinks, the contents maintain same behaviour. This is very neccessary, esppecially if you have images in your cells.)
+- ***On CSS GRID :***  To achieve that dynamic response when you shrink the elements in your cells, enusre that the heights and widths of the elements are set to 100% (i.e. aligning with the grid cells, so that as the cells move when the grid shrinks, the contents maintain same behaviour. This is very neccessary, esppecially if you have images in your cells). This is not completely true. The best way to achieve such responsive behaviour is to use ***media queries*** for your *images*, *width* and *heights* where necessary. Always ensure you preview your work across different devices, using *chrome developer tools* <br>
 
+-  Combine ***media queries*** with your ***flexbox*** and or ***CSS grid*** to achieve your RESPONSIVE behaviour and POSITIONING. 
+<br>
+
+- Most responsive framework (e.g Bootstrap) uses the 12-column grid responsive layout. 12 is used because it has several factors (1,2,3,4,6 & 12). Which means we could subdivide our page into sections that are evenly split and nicely layout themselves.
 
