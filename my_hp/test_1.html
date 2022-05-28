@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container{display:grid;
+        margin: 1%;
+        grid-gap:10px;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 0.2fr 0.8fr;
+    grid-template-areas:"menu menu"
+                        "photo bio"
+                        "publications  publications"
+                        "awards  awards";}
+    #menu-bar{grid-area: menu;}
+    #photo-area{grid-area:photo; justify-self: center;}
+    #bio-area{grid-area:bio; text-align: left; font-size:110%; line-height:125%}
+    #publication-area{grid-area:publications;}
+    header li{display:inline; margin:1%;}
+    header ul {text-align: end;} 
+    img{width:60%; height:60%; text-align: center; border: 1px solid yellow;}                 
+</style>
+<body>
+    <main id="container" style="border: 1px solid red">
+        <header id="menu-bar" style="border: 1px solid green">
+            <ul>
+                <li>About Me</li>
+                <li> Publications</li>
+                <li> Projects</li>
+                <li>Awards</li>
+                <li>Contacts</li>
+            </ul>
+        </header>
+
+        <section id="photo-area" style="border:1px solid blue; justify-items:center;">
+            <img src="./images/my_photo.jpg"> <br> BEng. Chemical Engineering  (2016)<br>PhD. Chemical Engineering (in view)<br> Diploma in Material Science & Engineering (in view) <br>
+            Minor in Computer Science (in view)
+        </section>
+
+        <section id="bio-area" style="border:2px solid black">
+            This  is going to be Andrew Okafor Nduka is a graduate from the pretigious University of Benin (UNIBEN), Nigeria; where he obtained a BEng. in Chemical Engineering (2016) with a first class honor (4.72/5.0 CGPA).
+            He is currently on a Doctorate degree program at Gordon A. and Mary Cain department of  Chemical Engineering at Louisiana State University (LSU), Baton Rouge, USA. 
+            He has taken varoius courses in Chemical Engineering and across other deciplines such as Chemistry (Quantum Chemistry, Statistical Thermodynamics and Spectroscopy), Physics (Condensed Matter Physics, Computational Physics), 
+            Electrical Engineering (Integrated Circuit Designs) and Computer Science (Machine Learning), in pursuit of a diploma certificate in Material Science and Engineering (MSE) and a minor
+            in Computer Science (current CGPA: 3.97/4.0).<p></p> Andrew's PhD research focusses on the catalytic properties of ordered and disordered alloy phases - how catalytic properties can be tuned
+            by varying alloy composition (stoichiometric and off-stoichiometric), which affect the phases in which they exist. This is done using computational techniques (ab-initio quantum calculations 
+            using DFT code, implemented in VASP). While taking courses, Andrew has also engaged in minor projects in areas such as Computatioanl Fluid Dynamics (CFD), Machine Learnig Predictions (SVM,
+            Random Forest, Naive Bayes Models and investigating best models using K-fold Cross Validation technique). <p></p> Andrew has also developed his IT skills in the area of Cloud Computing (deploying machine 
+            Learnig models on cloud), Programming (Python & JavaScript) and Web Development (UI/UX design and design of responsive web systems using CSS3) by taking varous courses on Cousera 
+            and working on projects (project based learning) structured to build job experience and ethics. Outside research, Andrew has volunteered in 
+            mentorship programs including volunteering as a judge for a high school career fair and exhibition.
+        </section>
+
+    </main>
+</body>
+</html>
