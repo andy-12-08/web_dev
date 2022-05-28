@@ -6,7 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    .container{display:grid;
+    grid-template-areas: " title board"
+                          "stats board"
+                          "score controls";
+    grid-template-rows:auto 1fr auto;
+    grid-template-columns: auto 1fr;
+    border: 1px solid red;
+    grid-gap: 0x;}
+    .title{grid-area:title; border: 1px solid blue}
+    .stats{grid-area:stats; border: 1px solid blue; align-self:start;}
+    .score{grid-area:score; border: 1px solid blue}
+    .board{grid-area:board; grid-row:1/3; border: 1px solid blue}
+    .controls{grid-area:controls; grid-row:3/4; border: 1px solid blue; justify-self: center;}
+</style>
+
 <body>
-    
+    <div class="container">
+        <div class="title">
+            Title
+        </div>
+        <div class="stats">
+            Stats<p> This <p> is my  <p>greatest chance </p>
+            <p> This <p> is my  <p>greatest chance </p>
+        </div>
+        <div class="score">
+            Score <p> This <p> is my  <p>greatest chance </p>
+        </div>
+        <div class="board">
+            Board <p> This <p> is my  <p>greatest chance </p> <p> This <p> is my  <p>greatest chance </p>
+        </div>
+        <div class="controls">
+            Controls <p> This  will be very interesting to know<p> 
+        </div>
+    </div>
 </body>
 </html>
