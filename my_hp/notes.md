@@ -31,5 +31,7 @@
 
 - Most responsive framework (e.g Bootstrap) uses the 12-column grid responsive layout. 12 is used because it has several factors (1,2,3,4,6 & 12). Which means we could subdivide our page into sections that are evenly split and nicely layout themselves. <br>
 
--  In a particular cell of your CSS grid, you could have both your image a text below it. 
+-  In a particular cell of your CSS grid, you could have both your image a text below it. <br>
+
+- After so much trial and error, I came to the conclusion that ***CSS Grid*** combined with ***Media queries***, is all you need to build your fully responsive website. I also came to a trick that sets the ***grid-template-rows*** to ***auto*** and the ***grid -template-columns*** (wdith of screen) to be in fr (from ***0.0fr*** to ***1.0fr***)
 
