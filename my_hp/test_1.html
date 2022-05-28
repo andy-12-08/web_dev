@@ -11,18 +11,18 @@
         margin: 1%;
         grid-gap:10px;
     grid-template-rows: auto auto auto auto;
-    grid-template-columns: 0.2fr 0.8fr;
+    grid-template-columns: 0.15fr 0.9fr;
     grid-template-areas:"menu menu"
                         "photo bio"
                         "publications  publications"
                         "awards  awards";}
     #menu-bar{grid-area: menu;}
-    #photo-area{grid-area:photo; justify-self: center;}
+    #photo-area{grid-area:photo;}
     #bio-area{grid-area:bio; text-align: left; font-size:110%; line-height:125%}
     #publication-area{grid-area:publications;}
     header li{display:inline; margin:1%;}
     header ul {text-align: end;} 
-    img{width:60%; height:60%; text-align: center; border: 1px solid yellow;}                 
+    img{width:100%;}                 
 </style>
 <body>
     <main id="container" style="border: 1px solid red">
@@ -31,14 +31,14 @@
                 <li>About Me</li>
                 <li> Publications</li>
                 <li> Projects</li>
-                <li>Awards and Honors</li>
+                <li>Awards & Honors</li>
                 <li>Skill Sets</li>
                 <li>Hobbies</li>
                 <li>Contacts</li>
             </ul>
         </header>
 
-        <section id="photo-area" style="border:1px solid blue; justify-items:center;">
+        <section id="photo-area" style="border:1px solid blue;">
             <img src="./images/my_photo.jpg"> <br> BEng. Chemical Engineering  (2016)<br>PhD. Chemical Engineering (in view)<br> Diploma in Material Science & Engineering (in view) <br>
             Minor in Computer Science (in view)
         </section>
