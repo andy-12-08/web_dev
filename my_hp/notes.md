@@ -33,5 +33,9 @@
 
 -  In a particular cell of your CSS grid, you could have both your image a text below it. <br>
 
-- After so much trial and error, I came to the conclusion that ***CSS Grid*** combined with ***Media queries***, is all you need to build your fully responsive website. I also came to a trick that sets the ***grid-template-rows*** to ***auto*** and the ***grid -template-columns*** (wdith of screen) to be in fr (from ***0.0fr*** to ***1.0fr***)
+- After so much trial and error, I came to the conclusion that ***CSS Grid*** combined with ***Media queries***, is all you need to build your fully responsive website. I also came to a trick that sets the ***grid-template-rows*** to ***auto*** and the ***grid -template-columns*** (wdith of screen) to be in fr (from ***0.0fr*** to ***1.0fr***)<br>
+
+- Use ***grid-template-areas***, it will help in media query. <br>
+
+- Use ***position: relative:*** on grid contents and align top, right, bottom or left, with percentages (and not pixels).
 
