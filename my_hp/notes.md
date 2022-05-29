@@ -37,5 +37,13 @@
 
 - Use ***grid-template-areas***, it will help in media query. <br>
 
-- Use ***position: relative:*** on grid contents and align top, right, bottom or left, with percentages (and not pixels).
+- Use ***position: relative:*** on grid contents and align top, right, bottom or left, with percentages (and not pixels). <br>
+
+-  Some important links on CSS grid: <br>
+
+- [CSS_grid_example_1](https://blog.logrocket.com/how-to-use-css-grid-to-build-a-responsive-web-layout/) <br>
+
+- [CSS_grid_example_2](https://www.w3.org/TR/css-grid-1/)
+
+
 
