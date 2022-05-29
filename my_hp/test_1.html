@@ -22,7 +22,7 @@
     #publication-area{grid-area:publications;}
     header li{display:inline; margin:1%;}
     header ul {text-align: end;} 
-    img{width:100%;}
+    img{width:80%; position:relative;left:0%;}
     @media(max-width:768px){#container{grid-template-columns:1fr; grid-template-rows: auto auto auto;
                                         grid-template-areas: "menu"
                                                             "photo"
@@ -30,8 +30,10 @@
                                                             "publications"
                                                             "awards";
                                         }
-                            #photo-area{height:100%;font-size: 80%}
-                            }                                 
+                            #photo-area{height:100%;font-size: 80%;}
+                            img{width:50%; position:relative;left:0%;}
+                            }
+    
 </style>
 <body>
     <main id="container">
