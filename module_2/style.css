@@ -1,0 +1,33 @@
+#container{display:grid; margin:1% 1% 20% 1%; grid-template-rows:0.2fr 0.8fr ; grid-template-columns:0.333fr 0.333fr 0.333fr;position:relative;
+    grid-gap: 30px; grid-template-areas: "header header header"
+                                            "chicken beef sushi";}
+header{grid-area:header }
+#chicken{grid-area:chicken}
+#beef{grid-area:beef}
+#sushi{grid-area:sushi}
+h5{text-align: center; font-size: 200%;}
+nav{text-align: center; border: 1px solid black; width: 40%; position: relative; left: 60%;}
+#chicken nav{background-color: pink;}
+#beef nav{background-color: red;}
+#sushi nav{background-color: yellow;}
+section{border: 2px solid black; margin-top:10%; margin-bottom:10%; background-color:grey;}
+section nav{font-size:175%;}
+section div{font-size:125%; text-align: center; margin:2.5%;}
+footer{position: fixed; width:120%; height:2%; bottom:0%; margin: 0% -2% 0% -2%; background-color: gray;}
+
+@media (min-width:768px) and (max-width:991px){#container{grid-template-rows:0.1fr 0.45fr 0.45fr; grid-template-columns:0.5fr 0.5fr; grid-gap: 30px;
+                                                grid-template-areas: "header header"
+                                                                    "chicken beef"
+                                                                      "sushi sushi";}
+                                        section{border: 2px solid black; margin-top:0%; margin-bottom:0%;}
+                                        #sushi nav{width: 20%; position: relative; left: 80%;}}
+
+@media (max-width:767px){#container{grid-template-columns:1fr; grid-template-rows: auto auto auto auto;
+                            grid-template-areas:"header"
+                                                "beef"
+                                                "chicken"
+                                                 "sushi";}
+                            section{border: 2px solid black; margin-top:0%; margin-bottom:0%;}
+                            nav{width: 40%; position: relative; left: 60%;}}
+
+                            
