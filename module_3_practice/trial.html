@@ -12,21 +12,40 @@
     body{font-size:16px; color:#fff; background-color:#61122f; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif}
     .logo_image{border-radius:50%; width:150px;height: 150px;}
     li{display: inline-block;}
-    nav > ul{text-align: center; color:#61122f; margin-left: auto; margin-left:auto; margin-right: 20px;} /* to target the list with glyphicon, in order to center the text with the icon */
+    nav > ul{text-align: center; color:#61122f; margin-left: auto; margin-right: 20px;} /* to target the list with glyphicon, in order to center the text with the icon */
     label  li:nth-child(2) {padding-left:10px;} /* to put a space between the logo and restaurant name */
     h1{color:#557c3e;font-weight: bold; text-shadow: 1px 1px 1px #557c3e;}
     header{background-color:#f6b319;}
     nav{display:flex;}
     nav ul li {margin:5px} /* to space the list items */
-    .checkBtn{color:white; float: right; font-size:20px; cursor: pointer;} 
+    .checkBtn{color:white; float: right; font-size:20px; cursor: pointer; display: none; } 
+    #check{display: none;}
+
+    @media (max-width: 880px) {
+        label  li:nth-child(1){display: none;}
+    }
+
+    @media (max-width: 710px) {
+        li{display:block}
+        .checkBtn{display: block;}
+        span{display:none;}
+        img{display:none;}
+        nav{margin: auto; max-width: fit-content; display:block}
+        nav > ul {font-size: 20px; float: none; position:fixed; z-index: 9; background-color: black; bottom: 100%;}
+        nav:checked ~.links{bottom: 0;}
+        }
+
+    
+
+
 </style>
 
 <body>
 
     <header>
-        
+
         <!-- your mobile view header-->
-        <div class ="checkBtn">
+        <div class ="checkBtn" for="check">
             <a href="#"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
         </div>
 
@@ -42,7 +61,7 @@
                 </ul>
             </label>
             <!-- your collapseable menu items-->
-            <ul>
+            <ul class="links">
                 <li><span class="glyphicon glyphicon-cutlery"></span><br>Menu</li>
                 <li><span class="glyphicon glyphicon-info-sign" ></span><br>About</li>
                 <li><span class="glyphicon glyphicon-certificate"></span><br>Awards</li>
