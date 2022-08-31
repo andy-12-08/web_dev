@@ -9,17 +9,18 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
 <style>
-    body{font-size:16px; color:#fff; background-color:#61122f; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif}
+    *{margin: 0; padding:0; box-sizing: border-box; text-decoration: none; list-style-type: none;}
+    body{width:100%; height: 100vh; font-size:16px; color:#fff; background-color:#61122f; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif}
     .logo_image{border-radius:50%; width:150px;height: 150px;}
     li{display: inline-block;}
     nav > ul{text-align: center; color:#61122f; margin-left: auto; margin-right: 20px;} /* to target the list with glyphicon, in order to center the text with the icon */
     label  li:nth-child(2) {padding-left:10px;} /* to put a space between the logo and restaurant name */
     h1{color:#557c3e;font-weight: bold; text-shadow: 1px 1px 1px #557c3e;}
-    header{background-color:#f6b319;}
+    header{background-color:#f6b319; width: 100%}
     nav{display:flex;}
     nav ul li {margin:5px} /* to space the list items */
-    .checkBtn{color:white; float: right; font-size:20px; cursor: pointer; display: none; } 
-    #check{display: none;}
+    .checkBtn{color:white; float: right; font-size:20px; cursor: pointer; display: none;} 
+    #check{display:none;}
 
     @media (max-width: 880px) {
         label  li:nth-child(1){display: none;}
@@ -31,23 +32,16 @@
         span{display:none;}
         img{display:none;}
         nav{margin: auto; max-width: fit-content; display:block}
-        nav > ul {font-size: 20px; float: none; position:fixed; z-index: 9; background-color: black; bottom: 100%;}
-        nav:checked ~.links{bottom: 0;}
+        nav > ul {font-size: 20px; float: none; color: black; position:absolute; left:100%;}
+        #check:checked ~ nav>ul{position: relative; left:0%;}
         }
-
-    
-
-
 </style>
-
+ 
 <body>
-
     <header>
-
         <!-- your mobile view header-->
-        <div class ="checkBtn" for="check">
-            <a href="#"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
-        </div>
+        <input type="checkbox" id="check" name="check">
+        <label class="glyphicon glyphicon-menu-hamburger checkBtn" for ="check"></label>
 
         <!-- your large screen header-->
         <nav>
