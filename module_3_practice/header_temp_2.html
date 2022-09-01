@@ -22,6 +22,7 @@
     .links li {margin:10px;} /* to space the list items */
     .checkBtn{color:white; float: right; font-size:20px; cursor: pointer; display: none;} 
     #check{display:none;}
+    a{color:white}
     
     @media (max-width: 880px) { 
         label  li:nth-child(1){display: none;}
@@ -35,6 +36,7 @@
         nav{margin: auto; max-width: fit-content; display:block}
         nav > ul {display:none;}
         #check:checked ~ nav>ul{display: block;font-size: 20px; color: black;}
+        
         }
     
 </style>
@@ -58,9 +60,9 @@
             </label>
             <!-- your collapseable menu items-->
             <ul class="links">
-                <li><span class="glyphicon glyphicon-cutlery"></span><br>Menu</li>
-                <li><span class="glyphicon glyphicon-info-sign" ></span><br>About</li>
-                <li><span class="glyphicon glyphicon-certificate"></span><br>Awards</li>
+                <a><li><span class="glyphicon glyphicon-cutlery"></span><br>Menu</li></a>
+                <a><li><span class="glyphicon glyphicon-info-sign" ></span><br>About</li></a>
+                <a><li><span class="glyphicon glyphicon-certificate"></span><br>Awards</li></a>
             </ul>
         </nav>
 
