@@ -27,12 +27,14 @@
     .links a:hover {color: orangered; cursor:pointer;}
 
     @media (max-width: 880px) { 
-        nav > ul {display:none;}
+        nav > ul {display:block; position: relative; left: -100%}
         .checkBtn{display: block; color: black;}
         label img:nth-child(1){margin-top: 5px;}
-        #check:checked ~ nav ul {display: block;}
+        #check:checked ~ nav ul {display: block; left:0%; transition: all 0.2s;}
         #check:checked ~ nav ul li {display: block;}
-    }
+        header > label {border: 2px solid black;}
+        header > label:hover{background-color: #61122f;}
+        }
 </style>
  
 <body>
