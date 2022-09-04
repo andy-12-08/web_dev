@@ -14,9 +14,9 @@
     .logo_image{border-radius:50%; width:150px;height: 150px;}
     li{display: inline-block;}
     nav > ul{text-align: center; color:#61122f; margin-left: auto; margin-right: 20px;} /* to target the list with glyphicon, in order to center the text with the icon */
-    label  li:nth-child(2) {padding-left:10px;} /* to put a space between the logo and restaurant name */
+    label  li:nth-child(2) {padding-left:5px;} /* to put a space between the logo and restaurant name */
     label  li:nth-child(1) {margin-left: 5px;} /* to put a space between the logo and end of the screen */
-    h1{color:#557c3e;font-weight: bold; text-shadow: 1px 1px 1px #557c3e;}
+    h2{color:#557c3e;font-weight: bold; text-shadow: 1px 1px 1px #557c3e;}
     header{background-color:#f6b319; width: 100%}
     nav{display:flex;}
     .links li {margin:10px;} /* to space the list items */
@@ -27,19 +27,12 @@
     .links a:hover {color: orangered; cursor:pointer;}
 
     @media (max-width: 880px) { 
-        label  li:nth-child(1){display: none;}
-    }
-
-    @media (max-width: 710px) {
-        li{display:block}
-        .checkBtn{display: block; color: black;}
-        span{display:none;}
-        img{display:none;}
-        nav{margin: auto; max-width: fit-content; display:block}
         nav > ul {display:none;}
-        #check:checked ~ nav>ul{display: block;font-size: 20px;}
-        }
-    
+        .checkBtn{display: block; color: black;}
+        label img:nth-child(1){margin-top: 5px;}
+        #check:checked ~ nav ul {display: block;}
+        #check:checked ~ nav ul li {display: block;}
+    }
 </style>
  
 <body>
@@ -54,7 +47,7 @@
             <label>
                 <ul>
                     <li><img src="./images/logo.PNG" class=logo_image></li>
-                    <li><h1>David Chu's China Bistro</h1>
+                    <li><h2>David Chu's China Bistro</h2>
                         <img src="./images/slogo.PNG"> <span>Kosher Certified</span>
                     </li>
                 </ul>
