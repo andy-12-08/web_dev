@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<style>
+    *{margin: 0; padding:0; box-sizing: border-box; text-decoration: none; list-style-type: none;}
+    body{width:100%; height: 100vh; font-size:16px; color:#fff; background-color:#61122f; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif}
+    .logo_image{border-radius:50%; width:150px;height: 150px;}
+    li{display: inline-block;}
+    nav > ul{text-align: center; color:#61122f; margin-left: auto; margin-right: 20px;} /* to target the list with glyphicon, in order to center the text with the icon */
+    label  li:nth-child(2) {padding-left:10px;} /* to put a space between the logo and restaurant name */
+    label  li:nth-child(1) {margin-left: 5px;} /* to put a space between the logo and end of the screen */
+    h1{color:#557c3e;font-weight: bold; text-shadow: 1px 1px 1px #557c3e;}
+    header{background-color:#f6b319; width: 100%}
+    nav{display:flex;}
+    .links li {margin:10px;} /* to space the list items */
+    .checkBtn{float: right; font-size:20px; cursor: pointer; display: none;} 
+    .checkBtn:hover{color: orangered;}
+    #check{display:none;}
+    a{color:black; text-decoration: none;}
+    .links a:hover {color: orangered; cursor:pointer;}
+
+    @media (max-width: 880px) { 
+        label  li:nth-child(1){display: none;}
+    }
+
+    @media (max-width: 710px) {
+        li{display:block}
+        .checkBtn{display: block; color: black;}
+        span{display:none;}
+        img{display:none;}
+        nav{margin: auto; max-width: fit-content; display:block}
+        nav > ul {display:none;}
+        #check:checked ~ nav>ul{display: block;font-size: 20px;}
+        #check:checked ~ nav ul li {display: inline-block;font-size: 20px;}
+        }
+    
+</style>
+ 
+<body>
+    <header>
+        <!-- your mobile view header-->
+        <input type="checkbox" id="check" name="check">
+        <label class="glyphicon glyphicon-menu-hamburger checkBtn" for ="check"></label>
+
+        <!-- your large screen header-->
+        <nav>
+            <!-- your logo and company name-->
+            <label>
+                <ul>
+                    <li><img src="./images/logo.PNG" class=logo_image></li>
+                    <li><h1>David Chu's China Bistro</h1>
+                        <img src="./images/slogo.PNG"> <span>Kosher Certified</span>
+                    </li>
+                </ul>
+            </label>
+            <!-- your collapseable menu items-->
+            <ul class="links">
+                <a style="text-decoration:none;"><li><span class="glyphicon glyphicon-cutlery"></span><br>Menu</li></a>     <!-- text-decoration didnt work in the style cascade, had to place it as inline-->
+                <a style="text-decoration:none;"><li><span class="glyphicon glyphicon-info-sign" ></span><br>About</li></a>
+                <a style="text-decoration:none;"><li><span class="glyphicon glyphicon-certificate"></span><br>Awards</li></a>
+            </ul>
+        </nav>
+
+    </header>
+
+</body>
+</html>
