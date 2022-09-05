@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop down menu design</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<style>
+
+    *{padding: 0px; margin: 0px; box-sizing:border-box;}
+    body{background-image: url(./images/background.jpg); background-size:auto; background-position: center; 
+        font-family: sans-serif;}
+
+    .menu-bar{background: rgb(0,100,0); text-align: center;}
+    .menu-bar ul{display:flex; list-style: none; color: #fff; justify-content:space-evenly;}
+    .menu-bar ul li{margin:15px; padding: 15px;}
+    .menu-bar ul li a{text-decoration: none; color: #fff;}
+    .active, .menu-bar ul li:hover{background: #2bab0d; border-radius: 3px;}
+
+    .sub-menu-1{display:none;}
+
+    .menu-bar ul li:hover .sub-menu-1{display: block; position: absolute;background: rgb(0,100,0); margin-top:15px;}
+    .menu-bar ul li:hover .sub-menu-1 ul{ display: block; margin: 10px;}
+    .menu-bar ul li:hover .sub-menu-1 ul li{width: 150px; padding: 10px; border-bottom: 1px dotted #ffff; background: transparent; border-radius: 0; text-align: left;}
+    .menu-bar ul li:hover .sub-menu-1 ul li:last-child{border-bottom:none}
+    .menu-bar ul li:hover .sub-menu-1 ul li a:hover{color: #b2ff00;}
+
+    .sub-menu-2{display:none;}
+    .hover-me:hover .sub-menu-2{display: block; position: absolute;background: rgb(0,100,0); margin-top:-40px; margin-left: 140px;}
+
+
+
+    .glyphicon-triangle-right{float: right;}
+
+
+
+
+
+</style>
+<body>
+    <div class="menu-bar">
+        <ul>
+            <li class="active"><a href="#">Home <span class="glyphicon glyphicon-home"></span></a></li>
+
+            <li><a href="#">About Us <span class="glyphicon glyphicon-user"></span></a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#">Mission</a></li>
+                        <li><a href="#">Vission</a></li>
+                        <li><a href="#">Team</a></li> 
+                    </ul>
+                </div>
+            </li>
+
+
+            <li><a href="#">Services <span class="glyphicon glyphicon-folder-open"></span></a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#">Web Designing</a></li>
+                        <li class="hover-me"><a href="#">Marketing <span class="glyphicon glyphicon-triangle-right"></span></a>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="#">SOE</a></li>
+                                    <li><a href="#">Social Media</a></li>
+                                    <li><a href="#">Email Marketing</a></li> 
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hover-me"><a href="#">Mobile App <span class="glyphicon glyphicon-triangle-right"></span></a>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="#">Andriod App</a></li>
+                                    <li><a href="#">iOS App</a></li>
+                                    <li><a href="#">Ionic App</a></li> 
+                                    <li><a href="#">Flutter App</a></li> 
+                                    <li><a href="#">Unity App</a></li> 
+                                </ul>
+                            </div>
+                        </li> 
+                    </ul>
+                </div>
+            </li>
+            
+            <li><a href="#">Clients <span class="glyphicon glyphicon-globe"></span></a></li>
+            <li><a href="#">Investors <span class="glyphicon glyphicon-export"></span></a></li>
+            <li><a href="#">Pricing <span class="glyphicon glyphicon-usd"></span></a></li>
+            <li><a href="#">Training <span class="glyphicon glyphicon-edit"></span></a></li>
+            <li><a href="#">Contact <span class="glyphicon glyphicon-earphone"></span></a></li>
+       </ul>
+    </div>
+</body>
+</html>
