@@ -20,7 +20,7 @@
     header{background-color:#f6b319; width: 100%}
     nav{display:flex;}
     .links li {margin:10px;} /* to space the list items */
-    .checkBtn{float: right; font-size:20px; cursor: pointer; display: none;} 
+    .checkBtn{float: right; font-size:20px; cursor: pointer; display: none; background-color: #fff; padding:5px;} 
     .checkBtn:hover{color: orangered;}
     #check{display:none;}
     a{color:black; text-decoration: none;}
@@ -32,8 +32,6 @@
         label img:nth-child(1){margin-top: 5px;}
         #check:checked ~ nav ul {display: block; left:0%; transition: all 0.2s;}
         #check:checked ~ nav ul li {display: block;}
-        header > label {border: 2px solid black;}
-        header > label:hover{background-color: #61122f;}
         }
 </style>
  

@@ -20,21 +20,39 @@
     header{background-color:#f6b319; width: 100%}
     nav{display:flex;}
     .links li {margin:10px;} /* to space the list items */
-    .checkBtn{color:white; float: right; font-size:20px; cursor: pointer; display: none;} 
+    .checkBtn{color:black; float: right; font-size:20px; cursor: pointer; display: none; padding:5px; border:#61122f 1px solid;
+    border-radius:5px; margin: 2px 2px 0px 0px;} 
     #check{display:none;}
+    .phone_num{font-size: 22px;font: bold; text-align: right;}
+    .we_deliver{color:#557c3e; font-size: 15px; display: block;}
+    .jumbo{width:80%; height:100%; margin:2%;}
+     
+    @media (min-width: 881px) and (max-width: 1000px) { 
+        .logo_image{border-radius:50%; width:120px;height: 120px;}
+        h1{font-size:3vw;}
+        
+    }
     
     @media (max-width: 880px) { 
         label  li:nth-child(1){display: none;}
+        h1{font-size:3.5vw;}
+        
     }
 
     @media (max-width: 710px) {
         li{display:block}
+        ul{display:inline}
+        h1{font-size:5vw;}
         .checkBtn{display: block;}
-        span{display:none;}
-        img{display:none;}
-        nav{margin: auto; max-width: fit-content; display:block}
+        header nav label{text-align:left}
+        nav{display: block;}
         nav > ul {display:none;}
-        #check:checked ~ nav>ul{display: block;font-size: 20px; color: black;}
+        #check:checked ~ nav>ul{display:inline-block;font-size: 20px;}
+        #check:checked ~ nav ul li{display:inline-block;font-size: 20px;}
+        #check:checked ~ .checkBtn{background-color: #fff}
+        .logo_image{display: none;}
+        nav ul li:nth-child(4){float: right;}
+        
         }
     
 </style>
@@ -61,10 +79,15 @@
                 <li><span class="glyphicon glyphicon-cutlery"></span><br>Menu</li>
                 <li><span class="glyphicon glyphicon-info-sign" ></span><br>About</li>
                 <li><span class="glyphicon glyphicon-certificate"></span><br>Awards</li>
+                <li class="phone_num">410-602-5008<span class="we_deliver">*We Deliver</span></li>
             </ul>
         </nav>
-
     </header>
+    <div>
+        <div>
+            <img class="jumbo" src="./images/jumbo.PNG">
+        </div>
+    </div>
 
 </body>
 </html>
