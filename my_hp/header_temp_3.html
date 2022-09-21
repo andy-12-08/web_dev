@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<style>
+    *{margin: 0; padding:0; box-sizing: border-box;}
+    body{width:100%; height: 100vh; font-size:16px; color:black; background-color:whitesmoke; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif}
+    .logo_image{border-radius:50%; width:150px;height: 150px;}
+    
+    nav > ul{text-align: center; color:#61122f; margin-left: auto; margin-right: 20px;} /* to target the list with glyphicon, in order to center the text with the icon */
+    label  li:nth-child(2) {padding-left:5px; list-style-type: none;} /* to put a space between the logo and restaurant name */
+    label  li:nth-child(1) {margin-left: 5px; list-style-type: none;} /* to put a space between the logo and end of the screen */
+    h2{color:#557c3e;font-weight: bold; text-shadow: 1px 1px 1px #557c3e;}
+    header{background-color:#f6b319; width: 100%; padding:0% 2% 0% 2%;}
+    nav{display:flex;}
+    .links li {margin:10px; display: inline-block;} /* to space the list items */
+    .checkBtn{font-size:20px; cursor: pointer; display: none; background-color: #fff; padding:5px;} 
+    .checkBtn:hover{color:green;}
+    #check{display:none;}
+    label img:nth-child(1){margin-top: 5px;}
+    a{color:black; text-decoration: none;}
+    .links a:hover {color:green; cursor:pointer;}
+
+
+/* Main Body */
+#content1{display:grid; grid-template-areas: 'row1_col1 row1_col2'
+                                             'row2_col1 row2_col2'
+                                             'row3_col1 row3_col2';
+                                             width: 100%; height: 100%; grid-template-columns: 0.6fr 0.4fr;
+                                             grid-template-rows: 1fr 1fr 1fr 1fr;
+                                             grid-gap:0px;
+                                             padding:10px 50px 5px 50px;
+                                            }
+
+.item1{grid-area:'row1_col1'; font-size: 20px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; align-content: center; text-align: justify;}
+.item2{grid-area:'row1_col2'; text-decoration: dotted; text-align: left; padding-left:20%;}
+.item3{grid-area:'row2_col1'; font-size: 20px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; align-content: center; text-align: justify;}
+.item4{grid-area:'row2_col2'; text-decoration: dotted; text-align: left; padding-left:20%;}
+.item5{grid-area:'row3_col1'; font-size: 20px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; align-content: center; text-align: justify;}
+.item6{grid-area:'row3_col2'; text-decoration: dotted; text-align: left; padding-left:20%;}
+/* Main Body */
+
+
+
+
+    @media (max-width: 890px) { 
+        nav > ul {display:none}
+        .checkBtn{display: block; color: black; padding: 7px; float:right;}
+        #check:checked ~ nav ul {display: block; float: left;}
+        #check:checked ~ nav ul li {display: block;}
+        .links li {width:120px; border-bottom: 2px dotted green; background:transparent; border-radius: 0px; text-align: left;}
+        .links{padding-left:20px; margin-right:-20px;}
+        #content1{display:grid; grid-template-areas: 'row1_col1' 
+                                                     'row1_col2'
+                                                      'row2_col1'
+                                                      'row2_col2'
+                                                      'row3_col1' 
+                                                      'row3_col2';
+                                             width: 100%; height: 100%; grid-template-columns: 1fr;
+                                             grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+                                             grid-gap:10px;
+                                            }
+        
+        }
+
+
+</style>
+ 
+<body>
+    <header>
+        <!-- your mobile view header-->
+        <input type="checkbox" id="check" name="check">
+        <label class="glyphicon glyphicon-menu-hamburger checkBtn" for ="check"></label>
+
+        <!-- your large screen header-->
+        <nav>
+            <!-- your logo and company name-->
+            <label>
+                <ul>
+                    <li><img src="./images/my_photo.jpg" class=logo_image></li>
+                    <li>
+                        <h2>Andrew Okafor</h2><span>PhD. Chemical Engineering (in view), minor in Computer Science.</span><br>
+                        Diploma in Material Science and Engineering. <br>
+                        BEng. Chemical Engineering.
+                    </li>
+                </ul>
+            </label>
+            <!-- your collapseable menu items-->
+            <ul class="links">
+                 <!-- text-decoration didnt work in the style cascade, had to place it as inline-->
+                <a href='#content1' style="text-decoration:none;"><li><span class="glyphicon glyphicon-user" ></span><br>About Me</li></a>
+                <a style="text-decoration:none;"><li><span class="glyphicon glyphicon-folder-open"></span><br>Projects</li></a>
+                <a style="text-decoration:none;"><li><span class="glyphicon glyphicon-certificate"></span><br>Awards</li></a>
+                <a style="text-decoration:none;"><li><span class="glyphicon glyphicon-earphone"></span><br>Contact</li></a>
+            </ul>
+        </nav>
+
+    </header>
+
+<div id = "content1">
+    <section class = 'item1'> A Chemical Engineering PhD. Candidate (minor in Computer Science), 
+        who is also enrolled in a diploma program in Material Science and Engineering at Louisiana State University.
+        My current research focusses on engineering the the electronic structure of high entropy alloys (CrFeCoNi) for electro-catalytic applaications, 
+        as a possible replacement for the more expensive precious metals (Pt, Pd, Ru, Rh, Os, Au, Ag).
+    </section>
+
+    <section class = 'item2'> 
+        <strong>Skills acquired:</strong>
+        <ul>
+            <li> Alloy design (superalloys, microalloys, highentropy alloys)</li>
+            <li>Computational catalyst design</li>
+            <li>Ab-initio computations using VASP</li>
+            <li>Atomic simulation environment (ASE)</li>
+            <li> Atomistic machine learning package (AMP)</li>
+            <li>Working with linux and high performance computing (HPC) </li>
+            <li>Python programming language</li>
+            <li>Monte Carlo methods</li>
+        </ul>
+    <hr style="border:1px solid black ;">
+    </section>
+
+    <section class = 'item3'> As a Material  Scientist, my focus is on the electronic  and geometric structure of materials 
+        and how they affect their bulk and surface properties. Good knowledge of microfabrication processes such as photolitography, spin coating, masking, and etching, inline with the
+         <em>megaposit SPR 3000 series photoresist specifications. </em>
+    </section>
+
+    <section class = 'item4'> <strong>Courses taken:</strong>
+        <ul>
+            <li>Condensed matter physics</li>
+            <li>Statistical thermodynamics</li>
+            <li>Computational physics</li>
+            <li>Advanced spectroscopy</li>
+            <li>Integrated circuit engineering</li>
+        </ul>
+        <hr style="border:1px solid black ;">
+    </section>
+
+    <section class = 'item5'> 
+        My focus as a computer scientist is on developing and deploying optimized models for end users, utilizing cloud services (Iaas and Paas). 
+    </section>
+
+    <section class = 'item6'> <strong>Skilled acquired:</strong>
+        <ul>
+            <li>Machine Learning (Supervised and Unsupervised)</li>
+            <li>Optimization (using MATLAB and Python)</li>
+            <li>Cloud Computing</li>
+            <li>AWS DevOps ; CI/CD pipeline, Route 53, Networking (VPC and Subnets)</li>
+            <li>Front End Web Devlopment (HTML, CSS, JavaScript)</li>
+        </ul>
+        <hr style="border:1px solid black ;">
+    </section>
+
+
+
+</div>
+
+
+
+</body>
+</html>
